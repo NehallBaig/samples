@@ -19,14 +19,17 @@ class MyLogin extends StatelessWidget {
             children: [
               Text(
                 'Welcome',
+                key: const ValueKey('welcomeText'),
                 style: Theme.of(context).textTheme.displayLarge,
               ),
               TextFormField(
+                key: const ValueKey('usernameTextField'),
                 decoration: const InputDecoration(
                   hintText: 'Username',
                 ),
               ),
               TextFormField(
+                key: const ValueKey('passwordTextField'),
                 decoration: const InputDecoration(
                   hintText: 'Password',
                 ),
@@ -36,6 +39,7 @@ class MyLogin extends StatelessWidget {
                 height: 24,
               ),
               ElevatedButton(
+                key: const ValueKey('enterButton'),
                 onPressed: () {
                   context.pushReplacement('/catalog');
                 },
