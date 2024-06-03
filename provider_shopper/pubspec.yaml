@@ -22,6 +22,14 @@ dev_dependencies:
     path: ../analysis_defaults
   flutter_test:
     sdk: flutter
+  integration_test:
+    sdk: flutter
+  patrol: ^3.7.2
+
+patrol:
+  app_name: provider_shopper
+  android:
+    package_name: dev.flutter.provider_shopper
 
 flutter:
   uses-material-design: true
